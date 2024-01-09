@@ -16,6 +16,8 @@ public class CompanySide implements Subject{
         System.out.println("remove this " + mobile.getDeviceName() + " not to sent notification");
     }
 
+    //using this functions we sent the notification to registered
+    //mobiles devices 
     @Override
     public void notifyMobiles(String msg) {
         for(Mobile mobile : deviceListSentNotification){
